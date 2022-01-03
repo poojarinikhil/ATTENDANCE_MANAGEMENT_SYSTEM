@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.attendance_management_system.New_registrationController">
+   <left>
+      <AnchorPane prefHeight="394.0" prefWidth="613.0" style="-fx-background-color: #050D1E;" BorderPane.alignment="CENTER">
+         <children>
+            <Ellipse fill="#151a05" layoutX="419.0" layoutY="302.0" radiusX="100.0" radiusY="80.0" stroke="#151a05" strokeType="INSIDE" />
+            <Polygon fill="#051c0e" layoutX="50.0" layoutY="66.0" points="-50.0, 40.0, 163.0, 49.0, -50.0, -66.0" stroke="#051c0e" strokeType="INSIDE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#08132c" height="55.0" layoutX="67.0" layoutY="15.0" stroke="#2d3742" strokeType="INSIDE" width="466.0" />
+            <Label layoutX="70.0" layoutY="186.0" text="Username :" textFill="#cbd2d9">
+               <font>
+                  <Font name="Arial Black" size="22.0" />
+               </font></Label>
+            <Label layoutX="115.0" layoutY="117.0" text="Name : " textFill="#cbd2d9">
+               <font>
+                  <Font name="Arial Black" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="109.0" layoutY="21.0" text="NEW REGISTRATION" textFill="#e4e4e4">
+               <font>
+                  <Font name="Liberation Serif" size="39.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name_tf" layoutX="232.0" layoutY="113.0" opacity="0.71" prefHeight="35.0" prefWidth="246.0" style="-fx-background-color: WHITE; -fx-border-color: #cbd2d9;">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="username_tf" layoutX="232.0" layoutY="183.0" opacity="0.72" prefHeight="35.0" prefWidth="246.0" style="-fx-background-color: WHITE; -fx-border-color: #cbd2d9;">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Button fx:id="SUBMIT_BUTTON" layoutX="239.0" layoutY="322.0" mnemonicParsing="false" onAction="#SubmitOnAction" prefHeight="22.0" prefWidth="123.0" style="-fx-background-color: #56CACA;" text="SUBMIT">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color red="0.45358186960220337" green="0.6986050009727478" blue="0.9605262875556946" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Label layoutX="72.0" layoutY="252.0" text="Password : " textFill="#cbd2d9">
+               <font>
+                  <Font name="Arial Black" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="password_tf" layoutX="232.0" layoutY="249.0" opacity="0.71" prefHeight="35.0" prefWidth="246.0" style="-fx-background-color: WHITE; -fx-border-color: #cbd2d9;">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Label fx:id="message" layoutX="286.0" layoutY="355.0" textFill="#970202" />
+            <Button fx:id="registered" layoutX="264.0" layoutY="78.0" mnemonicParsing="false" onAction="#registerOnAction" style="-fx-background-color: transperent;" text="Registered" textFill="#efc9a4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+         </children></AnchorPane>
+   </left>
+</BorderPane>

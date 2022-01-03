@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.attendance_management_system.add_subject">
+    <center>
+        <AnchorPane prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: #050D1E;" BorderPane.alignment="CENTER">
+            <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#042c08" height="92.0" layoutX="374.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Ellipse fill="#2f2f0b" layoutX="210.0" layoutY="334.0" radiusX="100.0" radiusY="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                <Label layoutX="147.0" layoutY="175.0" text="Roll No. :" textFill="#bcbcbc">
+                    <font>
+                        <Font name="Arial Black" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="rollno_ATTENDANCE_PERCANTAGE_tf" layoutX="278.0" layoutY="170.0" opacity="0.71" prefHeight="39.0" prefWidth="103.0" style="-fx-background-color: WHITE; -fx-border-color: White;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="CALCULATE" layoutX="196.0" layoutY="355.0" mnemonicParsing="false" onAction="#CALCULATE_ATTENDANCE" prefHeight="42.0" prefWidth="164.0" style="-fx-background-color: #263A67;" text="Calculate" textFill="#f5efef">
+                    <font>
+                        <Font name="Alef Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Label layoutX="110.0" layoutY="254.0" prefHeight="46.0" prefWidth="144.0" text="Percentage :" textFill="#c9c9c9">
+                    <font>
+                        <Font name="Arial Black" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="SHOW_ATTENDANCE" layoutX="278.0" layoutY="257.0" opacity="0.7" prefHeight="41.0" prefWidth="135.0" style="-fx-background-color: WHITE; -fx-border-color: White;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <Label layoutX="151.0" layoutY="67.0" text="Student Percentange" textFill="#e8e8e8">
+                    <font>
+                        <Font name="Liberation Serif" size="35.0" />
+                    </font>
+                </Label>
+                <Label fx:id="" layoutX="386.0" layoutY="338.0" />
+            <Line endX="458.0" layoutX="115.0" layoutY="128.0" startX="-100.0" stroke="#85b6ff" />
+            </children></AnchorPane>
+    </center>
+    <left>
+        <AnchorPane prefHeight="550.0" prefWidth="216.0" style="-fx-background-color: #081735;" BorderPane.alignment="CENTER">
+            <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#152b40" height="92.0" layoutX="-27.0" layoutY="460.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                <Button layoutX="38.0" layoutY="145.0" mnemonicParsing="false" onAction="#go_home" prefHeight="35.0" prefWidth="140.0" style="-fx-background-color: #050D1E;" text="HOME" textFill="#e4e4e4">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+            <Line endX="100.0" layoutX="108.0" layoutY="130.0" startX="-100.0" stroke="#85b6ff" />
+                <Button fx:id="go_back" layoutX="14.0" layoutY="501.0" mnemonicParsing="false" onAction="#gobackuACTION_LEC1" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #263A67;" text="Go Back" textFill="#e4e4e4">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+            <Label layoutX="46.0" layoutY="59.0" prefHeight="71.0" prefWidth="124.0" text="AMS" textFill="#b395cc">
+               <font>
+                  <Font name="FrankRuhlHofshi-Regular" size="53.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>

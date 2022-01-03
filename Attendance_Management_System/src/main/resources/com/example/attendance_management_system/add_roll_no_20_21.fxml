@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.attendance_management_system.add_roll_noController_20_21">
+   <center>
+      <AnchorPane prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: #050D1E;" BorderPane.alignment="CENTER">
+         <children>
+            <Polygon fill="#032203" layoutX="535.0" layoutY="61.0" points="-321.0, 51.5, 50.0, 40.0, 50.0, -61.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#052f2e" height="200.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Label layoutX="68.0" layoutY="171.0" text="Roll Number : " textFill="#949494">
+               <font>
+                  <Font name="Noto Sans Regular" size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="rollno_tf" layoutX="256.0" layoutY="172.0" opacity="0.29" prefHeight="39.0" prefWidth="273.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="add_rollno_button" layoutX="162.0" layoutY="355.0" mnemonicParsing="false" onAction="#ADD_ROLL_ON_ACTION_20_21" prefHeight="40.0" prefWidth="202.0" style="-fx-background-color: #0A1630;" text="Add Roll Number" textFill="#828eff">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font>
+            </Button>
+            <Label layoutX="109.0" layoutY="254.0" text="Full Name :" textFill="#8d8d8d">
+               <font>
+                  <Font name="Noto Sans Lisu Regular" size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fullname_tf" layoutX="256.0" layoutY="258.0" opacity="0.29" prefHeight="39.0" prefWidth="273.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="173.0" layoutY="51.0" text="Student Input" textFill="#c6c6c6">
+               <font>
+                  <Font name="Liberation Serif" size="44.0" />
+               </font>
+            </Label>
+            <Label fx:id="MESSAGE" layoutX="246.0" layoutY="425.0" prefHeight="22.0" prefWidth="163.0" textFill="#a80808" />
+            <Line endX="385.0" layoutX="190.0" layoutY="113.0" startX="-181.0" />
+         </children></AnchorPane>
+   </center>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="215.0" style="-fx-background-color: #081735;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="31.0" layoutY="155.0" mnemonicParsing="false" onAction="#go_home" prefHeight="35.0" prefWidth="140.0" style="-fx-background-color: #050D1E;" text="HOME" textFill="#c9c9c9">
+               <font>
+                  <Font name="Alef Regular" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="go_back" layoutX="14.0" layoutY="503.0" mnemonicParsing="false" onAction="#gobackuAction" prefHeight="33.0" prefWidth="100.0" style="-fx-background-color: #263A67;" text="Go Back" textFill="#ebebeb">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Line endX="100.0" layoutX="107.0" layoutY="113.0" startX="-100.0" />
+            <Label layoutX="46.0" layoutY="43.0" prefHeight="71.0" prefWidth="111.0" text="AMS" textFill="#b395cc">
+               <font>
+                  <Font name="FrankRuhlHofshi-Regular" size="53.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

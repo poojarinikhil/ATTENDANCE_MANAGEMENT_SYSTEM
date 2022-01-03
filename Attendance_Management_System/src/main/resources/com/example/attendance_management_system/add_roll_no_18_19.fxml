@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.attendance_management_system.add_roll_noController_20_21">
+    <center>
+        <AnchorPane prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: #050D1E;" BorderPane.alignment="CENTER">
+            <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#134242" height="200.0" layoutX="-11.0" layoutY="329.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Ellipse fill="#2f0c29" layoutX="475.0" layoutY="191.0" radiusX="100.0" radiusY="157.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                <Label layoutX="243.0" layoutY="171.0" text="ROLL NO :-" textFill="#bfbfbf">
+                    <font>
+                        <Font name="Noto Sans Regular" size="28.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="rollno_tf" layoutX="400.0" layoutY="171.0" opacity="0.75" prefHeight="39.0" prefWidth="273.0" style="-fx-background-color: WHITE; -fx-border-color: white;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="add_rollno_button" layoutX="315.0" layoutY="339.0" mnemonicParsing="false" onAction="#ADD_ROLL_ON_ACTION_18_19" prefHeight="46.0" prefWidth="200.0" style="-fx-background-color: #263A67;" text="ADD ROLL NO" textFill="#828eff">
+                    <font>
+                        <Font name="Arial Black" size="21.0" />
+                    </font>
+                </Button>
+                <Button fx:id="go_back" layoutX="14.0" layoutY="501.0" mnemonicParsing="false" onAction="#gobackuAction" prefHeight="35.0" prefWidth="99.0" style="-fx-background-color: #263A67;" text="Go Back" textFill="#e1e1e1">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+                <Label layoutX="215.0" layoutY="256.0" text="FULL NAME :-" textFill="#dadada">
+                    <font>
+                        <Font size="28.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="fullname_tf" layoutX="400.0" layoutY="256.0" opacity="0.76" prefHeight="39.0" prefWidth="273.0" style="-fx-background-color: WHITE; -fx-border-color: white;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <Label layoutX="375.0" layoutY="30.0" text="Student Input" textFill="#e1e1e1">
+                    <font>
+                        <Font name="Liberation Serif" size="35.0" />
+                    </font>
+                </Label>
+                <Button fx:id="mark_attendance_button" layoutX="546.0" layoutY="338.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="117.0" style="-fx-background-color: #263A67;" text="LEC" textFill="#828eff">
+                    <font>
+                        <Font name="Arial Black" size="22.0" />
+                    </font>
+                </Button>
+                <Label fx:id="MESSAGE" layoutX="361.0" layoutY="429.0" prefHeight="17.0" prefWidth="108.0" textFill="WHITE" />
+            </children></AnchorPane>
+    </center>
+</BorderPane>

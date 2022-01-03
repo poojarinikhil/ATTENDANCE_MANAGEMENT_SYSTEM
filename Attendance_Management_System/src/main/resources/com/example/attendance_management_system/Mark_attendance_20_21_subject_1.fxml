@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.attendance_management_system.add_subject">
+    <center>
+        <AnchorPane prefHeight="550.0" prefWidth="566.0" style="-fx-background-color: #050D1E;" BorderPane.alignment="CENTER">
+            <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c0517" height="200.0" layoutX="473.0" layoutY="348.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="111.0" />
+            <Polygon fill="#190428" layoutX="171.0" layoutY="346.0" points="-92.0, 84.0, 50.0, 40.0, 106.0, -142.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                <Label layoutX="113.0" layoutY="56.0" text="MARK ATTENDANCE" textFill="#dddddd">
+                    <font>
+                        <Font name="Liberation Serif" size="36.0" />
+                    </font>
+                </Label>
+            <Button fx:id="LEC_1" layoutX="62.0" layoutY="212.0" mnemonicParsing="false" onAction="#lec1_20_21" prefHeight="43.0" prefWidth="109.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: WHITE;" text="LEC 1" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="LEC_2" layoutX="79.0" layoutY="268.0" mnemonicParsing="false" onAction="#lec2_20_21" style="-fx-background-color: TRANSPARENT; -fx-border-color: WHITE;" text="LEC 2" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="LEC_3" layoutX="79.0" layoutY="341.0" mnemonicParsing="false" onAction="#lec3_20_21" style="-fx-background-color: TRANSPARENT; -fx-border-color: WHITE;" text="LEC 3" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="LEC_4" layoutX="79.0" layoutY="430.0" mnemonicParsing="false" onAction="#lec4_20_21" style="-fx-background-color: TRANSPARENT; -fx-border-color: WHITE;" text="LEC 4" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="PRAC_1" layoutX="384.0" layoutY="215.0" mnemonicParsing="false" style="-fx-background-color: TRANSPARENT; -fx-border-color: WHITE;" text="PRAC 1" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="PRAC_2" layoutX="376.0" layoutY="268.0" mnemonicParsing="false" style="-fx-background-color: TRANSPARENT; -fx-border-color: WHITE;" text="PRAC 2" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="PRAC_3" layoutX="376.0" layoutY="341.0" mnemonicParsing="false" style="-fx-background-color: TRANSPARENT; -fx-border-color: WHITE;" text="PRAC 3" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="PRAC_4" layoutX="376.0" layoutY="430.0" mnemonicParsing="false" style="-fx-background-color: TRANSPARENT; -fx-border-color: WHITE;" text="PRAC 4" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="LEC_11" layoutX="56.0" layoutY="150.0" mnemonicParsing="false" onAction="#ADD_MORE_LEC_20_21_subject1" style="-fx-background-color: #0A1630;" text="ADD LECS" textFill="#828eff">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="LEC_111" layoutX="353.0" layoutY="150.0" mnemonicParsing="false" onAction="#ADD_MORE_PRAC_20_21_subject1" style="-fx-background-color: #0A1630;" text="ADD PRACS" textFill="#828eff">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Button>
+            <Line endX="454.0" layoutX="119.0" layoutY="114.0" startX="-100.0" stroke="#85b6ff" />
+            </children>
+        </AnchorPane>
+    </center>
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="215.0" style="-fx-background-color: #081735;" BorderPane.alignment="CENTER">
+            <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0b2339" height="257.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="97.0" />
+                <Button layoutX="44.0" layoutY="132.0" mnemonicParsing="false" onAction="#go_home" prefHeight="35.0" prefWidth="140.0" style="-fx-background-color: #050D1E;" text="HOME" textFill="#e8e8e8">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+            <Line endX="100.0" layoutX="108.0" layoutY="118.0" startX="-100.0" stroke="#85b6ff" />
+                <Button layoutX="14.0" layoutY="501.0" mnemonicParsing="false" onAction="#gobackuAction_MARK_ATTENDANCE" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #263A67;" text="Go Back" textFill="#ebebeb">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+            <Label layoutX="54.0" layoutY="48.0" text="AMS" textFill="#b395cc">
+               <font>
+                  <Font name="Frank Ruehl CLM Bold" size="53.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>

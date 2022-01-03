@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.attendance_management_system.FIRST_PAGEController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #050D1E;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="41.0" layoutY="159.0" prefHeight="31.0" prefWidth="152.0" text="USERNAME :" textFill="#cbd2d9">
+               <font>
+                  <Font name="Arial" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="219.0" prefHeight="31.0" prefWidth="163.0" text="PASSWORD :" textFill="#cbd2d9">
+               <font>
+                  <Font name="Arial" size="21.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#051d1e" height="103.0" layoutY="291.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="389.0" style="-fx-background-color: #050D1E;" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#05081e" height="200.0" layoutX="306.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#08132c" height="52.0" layoutX="-118.0" layoutY="28.0" stroke="#2d3742" strokeType="INSIDE" width="433.0" AnchorPane.leftAnchor="-118.0" AnchorPane.rightAnchor="85.0" />
+            <PasswordField fx:id="password_login_tf" layoutX="33.0" layoutY="211.0" opacity="0.73" style="-fx-background-color: WHITE; -fx-border-color: #cbd2d9;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </PasswordField>
+            <TextField fx:id="username_login_tf" layoutX="33.0" layoutY="150.0" opacity="0.73" style="-fx-background-color: WHITE; -fx-border-color: #cbd2d9;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Label layoutX="14.0" layoutY="32.0" prefHeight="31.0" prefWidth="152.0" text="LOGIN" textFill="#e4e4e4">
+               <font>
+                  <Font name="Liberation Serif" size="39.0" />
+               </font>
+            </Label>
+            <Button fx:id="login" layoutX="90.0" layoutY="276.0" mnemonicParsing="false" onAction="#validateLogin" prefHeight="29.0" prefWidth="84.0" style="-fx-background-color: #56CACA;" text="LOGIN" textFill="#ae0202">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+            </Button>
+            <Label layoutX="56.0" layoutY="323.0" text="NOT REGISTERED? " textFill="#bc9551">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></Label>
+            <Button fx:id="signup_first_page_button" layoutX="158.0" layoutY="319.0" mnemonicParsing="false" onAction="#signupOnAction" style="-fx-background-color: TRANSPARENT;" text="SignUP!!" textFill="#baa152">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label fx:id="loginningmessage" layoutX="41.0" layoutY="88.0" prefHeight="46.0" prefWidth="214.0" textFill="#a80505">
+               <effect>
+                  <Glow />
+               </effect></Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
