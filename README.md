@@ -59,4 +59,4 @@ this were you can add attendance to a student
 
 we have to just enter a roll it calculates your percentage.
 ## 🔗 CONTACT ME 
-FOR ANY HELP YOU CAN EMAIL ME AT poojarinikhil01@gmai.com
+FOR ANY HELP YOU CAN EMAIL ME AT poojarinikhil01@gmail.com
